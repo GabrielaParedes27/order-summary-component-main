@@ -24,18 +24,26 @@ body {
 
 h2 {
   color: var(--Dark-blue);
+  font-weight: 900;
 }
 
 p {
   color: var(--Desaturated-blue);
   padding: 0px 40px;
   text-align: center;
+  font-size: 14px;
+  word-spacing: 2px;
+  line-height: 22px;
+}
+
+.img-hero {
+  height: 190px;
 }
 
 .card {
   width: 380px;
-  height: 500px;
-  background-color: var(--Very-pale-blue);
+  height: 540px;
+  background-color: #ffff;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -47,7 +55,103 @@ p {
 }
 
 .annual-plan {
-  border: 2px solid #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid var(--Very-pale-blue);
+  border-radius: 8px;
+  background-color: var(--Very-pale-blue);
+  margin: auto 40px;
+}
+
+.annual-plan h5 {
+  color: var(--Dark-blue);
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.change {
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--Bright-blue);
+  margin-right: -10px;
+}
+
+.change:hover {
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+}
+
+.annual-plan p {
+  margin-top: 0px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.icon-music {
+  margin-left: -10px;
+  padding-top: 12px;
+  height: 15%;
+  width: 15%;
+}
+
+.annual-info {
+  margin-left: -40px;
+}
+
+.payment {
+  padding: 10px;
+  border: 2px solid var(--Bright-blue);
+  border-radius: 8px;
+  background-color: var(--Bright-blue);
+  margin: 20px 40px;
+  color: var(--Very-pale-blue);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.payment:hover {
+  padding: 10px;
+  border: 2px solid var(--Desaturated-blue);
+  border-radius: 8px;
+  background-color: var(--Desaturated-blue);
+  margin: 20px 40px;
+  color: var(--Very-pale-blue);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cancel-order {
+  color: var(--Desaturated-blue);
+}
+
+.cancel-order:hover {
+  color: var(--Dark-blue);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 20px 40px;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 340px;
+    height: 560px;
+    background-color: #ffff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 80px;
+  }
 }
 
 .attribution {
